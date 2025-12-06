@@ -2,9 +2,9 @@
 Game Design Document
 1. Overview
 ●Game Title: [Kroken]
-●Genre: [Parkour]
+●Genre: [theft]
 ●Target Audience: [General age audience]
-●Summary: [an ambitious man whose famous painting was stolen)]
+●Summary: [thief trying to steal a painting)]
 ●Key Features: [Playermodels]
 2. Game Mechanics
 ●Core Gameplay: [jump and attack]
@@ -14,12 +14,12 @@ Game Design Document
 ●Progression System: [level system)]
 ●Difficulty Level: [Normal]
 3. Story and World
-●Story Summary: [Some people have stolen a painting from a very famous artist, but this artist wants to handle his own business because he was not a very good person in his past.]
-●Characters: [The artist's enemies had been following him for a long time and stole the most important piece of the collection, but the artist's bad past and the bad neighborhood genes he was born in are still with him.]
+●Story Summary: [The thief who came to steal the painting he had been after for a long time is very prepared and cautious this time because this painting is very valuable financially for him and his family.(eril).]
+●Characters: [This man, who was not very good at school and started committing petty thefts when he was a child, continued his life this way, went to jail and back but never got wiser, this time his plan is the biggest one.]
 ●World: [2000s France]
 ●Atmosphere: [ tense)]
 4. Visuals and Audio
-●Art Style: [ pixel art)]
+●Art Style: [cartoon)]
 ●Interface (UI): [easy inteface]
 ●Music: [adds tension and excitement]
 ●Sound Effects: [real effects]
