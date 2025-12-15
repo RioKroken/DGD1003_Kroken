@@ -42,7 +42,7 @@ public class Police : MonoBehaviour
 
         FlipCheck(direction.x);
 
-        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f)
+        if (Vector2.Distance(transform.position, currentPoint.position) < 0.8f)
         {
             currentPoint = currentPoint == pointA ? pointB : pointA;
         }

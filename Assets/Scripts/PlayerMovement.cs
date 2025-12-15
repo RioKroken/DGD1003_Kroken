@@ -1,5 +1,6 @@
-using System.Collections;
+ï»¿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -106,20 +107,27 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator AttackCoroutine()
     {
+        yield return new WaitForSeconds(0.15f); // Small delay to sync with animation
         isAttacking = true;
 
-        // Düþman kontrolü
-        Collider2D[] hits = Physics2D.OverlapCircleAll(
+        ContactFilter2D filter = new ContactFilter2D();
+        filter.SetLayerMask(enemyLayer);
+        filter.useTriggers = false;
+
+        Collider2D[] results = new Collider2D[10];
+
+        int hitCount = Physics2D.OverlapCircle(
             attackPoint.position,
             attackRadius,
-            enemyLayer
+            filter,
+            results
         );
 
-        foreach (Collider2D hit in hits)
+        for (int i = 0; i < hitCount; i++)
         {
-            if (hit.CompareTag("Enemy"))
+            if (results[i].CompareTag("Enemy"))
             {
-                Destroy(hit.gameObject);
+                Destroy(results[i].gameObject);
             }
         }
 
@@ -134,6 +142,22 @@ public class PlayerMovement : MonoBehaviour
         if (collectable != null)
         {
             collectable.Collect();
+        }
+
+        if (other.GetComponent<Door>() != null)
+        {
+            int currentIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentIndex + 1);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            // Yeniden baÅŸlat
+            int currentIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentIndex);
         }
     }
 
