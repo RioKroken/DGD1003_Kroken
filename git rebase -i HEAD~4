@@ -1,0 +1,31 @@
+[33mcommit 740d2c3418e8fb9158aa926df7db9594ea5c4a9b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author:     enestalhatinmaz <2400004508@stu.iku.edu.tr>
+AuthorDate: Mon Dec 15 19:34:36 2025 +0300
+Commit:     enestalhatinmaz <2400004508@stu.iku.edu.tr>
+CommitDate: Mon Dec 15 19:34:36 2025 +0300
+
+    Camera Changed
+
+[33mcommit b7c4a03147a953548670b6bb69ef3a00b5dd5a9d[m
+Author:     enestalhatinmaz <2400004508@stu.iku.edu.tr>
+AuthorDate: Mon Dec 15 19:14:54 2025 +0300
+Commit:     enestalhatinmaz <2400004508@stu.iku.edu.tr>
+CommitDate: Mon Dec 15 19:14:54 2025 +0300
+
+    CoinCollectable null Check Added
+
+[33mcommit fe46b522083700a120d4cb7185c7f6b0ba915126[m
+Author:     enestalhatinmaz <2400004508@stu.iku.edu.tr>
+AuthorDate: Mon Dec 15 17:51:44 2025 +0300
+Commit:     enestalhatinmaz <2400004508@stu.iku.edu.tr>
+CommitDate: Mon Dec 15 17:51:44 2025 +0300
+
+    Levels Done
+
+[33mcommit 56fb4b9ff68e183280e8a97297480122d0154d7f[m
+Author:     enestalhatinmaz <2400004508@stu.iku.edu.tr>
+AuthorDate: Sun Dec 14 19:27:56 2025 +0300
+Commit:     enestalhatinmaz <2400004508@stu.iku.edu.tr>
+CommitDate: Sun Dec 14 19:27:56 2025 +0300
+
+    Assets & Animations Added
